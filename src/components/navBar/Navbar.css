@@ -1,0 +1,125 @@
+nav{
+    width: 100%;
+    /* background-color: #333; */
+    color: #fff;
+    padding: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav div{
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav ul li{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.stickyNavColor{
+background-color: #212ea0;
+}
+
+
+/* icon style */
+.menu{
+    width: 4rem;
+    height: auto;
+    display: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* ================  Media Query ===================== */
+
+@media( 1200px <= width <= 1399px ){
+    nav ul{
+        gap:  4rem;
+    }
+}
+
+/* 992px <= width <= 1200px */
+@media( width < 1200px ){  
+    nav ul{
+        gap:  3rem;
+    }
+
+    nav div{
+        font-size: 3rem;
+    }
+}
+
+/* 768px <= width <= 991px */
+/* /* hamburger menu style  */
+@media (width < 992px){
+
+    nav div{
+        font-size: 2.8rem;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        /* show then right =0 and hide right = -25rem */
+        right: -40%;
+        width: 40%;
+        /* === */
+        bottom: 0;
+        background-color: #212ea0;
+        /* ul goes downward to the menu icon */
+        z-index: -1;  
+    
+        flex-direction: column;
+        justify-content: center;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        }
+
+        .menu{
+            width: 3.5rem;
+        }
+
+        .menu{
+            display: block;
+        }
+
+        .showMenu{
+            right: 0;
+        }
+}
+
+
+@media (width < 576px){
+    nav div{
+        font-size: 2.5rem;
+    }
+    
+    nav ul {
+        
+        right: -100%;
+        width: 100%;
+        }
+
+        .menu{
+            width: 3rem;
+        }
+}

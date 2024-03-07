@@ -1,0 +1,101 @@
+.contactContainer{
+    margin: 8rem auto;
+    /* border: 1px solid firebrick;  */
+    justify-content: space-between;
+}
+
+
+/* left contact */
+.leftContact, .rightContact{
+    /* border: 1px solid fuchsia; */
+    width: 100%;
+}
+
+.leftContact h3{
+    font-size: 1.8rem;
+}
+
+
+.leftContact p{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+
+
+.leftContact ul li{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contactIcon{
+    font-size: 2.5rem;
+    color: #212ea0;
+}
+
+/* right contact */
+
+.rightContact form{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContact form label{
+    font-size: 1.4rem;
+}
+
+.rightContact form input[type="text"], .rightContact input[type="number"]{
+    height: 3.5rem;
+    padding: 0 1rem;
+}
+
+
+.rightContact form input[type="text"], .rightContact form input[type="number"], .rightContact form textarea{
+    
+    outline: none;
+    border: none;
+    background-color: #ebecfe;
+   
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+}
+
+.rightContact form textarea{
+    resize: none;
+    padding: 1rem;
+}
+
+.rightContact form .btn{
+    width: 16rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 3rem;
+    background-color: #212ea0;
+    color: #fff;
+}
+
+
+
+
+/* =============Media Query=============== */
+@media (width < 768px){
+    .rightContact{
+        padding-top: 5rem;
+    }
+
+    .rightContact form .btn{
+        width: 14rem;
+        font-size: 1.3rem;
+    }
+}

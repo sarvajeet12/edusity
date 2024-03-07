@@ -1,0 +1,15 @@
+.footer{
+    border-top: 1px solid #797979;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-left: 2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+.programs{
+    /* border: 1px solid red; */
+    gap: 20rem;
+    /* margin: 8rem auto; */
+}
+
+.programCard{
+    height: 30rem;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+
+.programCardThird{
+    display: block;
+}
+
+.programs img{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+
+/* .caption overlap .programCard*/
+.caption{
+    /*===Overlapcode*/position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 15, 152, 0.3);
+
+    /*===allelementscenterofthe.captionor.programCardCentercode*/display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*hidecode*/
+    opacity: 0;
+
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    /* border radtus */
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.caption img{
+    width: 30%;
+    height: 27%;
+}
+
+.caption p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.programCard:hover .caption{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+/* media query */
+@media (width < 1200px){
+    .programs{
+        gap: 15rem;
+    }
+}
+
+
+@media (width < 992px){
+    .programs{
+        gap: 10rem;
+    }
+}
+
+@media (width < 768px){
+    .programs{
+        gap: 5rem;
+    }
+
+    .programCard{
+        height: 25rem;
+    }
+}
+
+
+
+@media (width < 576px){
+    .programs{
+        padding: 0 10%;
+    }
+    .programCard{
+        height: 25rem;
+    }
+}
+
+    

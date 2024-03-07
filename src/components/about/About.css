@@ -1,0 +1,92 @@
+.aboutContainer{
+   /* border: 1px solid purple;  */
+   margin: 10rem auto;
+   justify-content: space-between;
+   /* height: 100%; */
+}
+
+
+.aboutContainer .aboutLeft{
+   /* border: 1px solid green;  */
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.aboutContainer .aboutRight{
+   /* border: 1px solid green;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.aboutContainer .aboutLeft img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    
+}
+.aboutContainer .aboutLeft img:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    width: 15%;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.aboutContainer .aboutRight h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.aboutContainer .aboutRight h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.aboutContainer .aboutRight p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.aboutRight .btn{
+    width: 16rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    background-color: #212ea0;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* popUpVideo */
+
+
+/* ======================Media Query==================== */
+
+
+@media (width < 768px){
+    .aboutContainer .aboutLeft img:nth-child(1){
+        width: 100%;
+        height: 80%;
+    }
+}
+
+@media (width < 576px){
+
+    .aboutContainer .aboutRight h3{
+        font-size: 1.3rem;
+    }
+    .aboutContainer .aboutRight h2{
+        font-size: 2rem;
+    }
+}
